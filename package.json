@@ -1,7 +1,7 @@
 {
   "name": "grasshopper",
   "version": "0.1.0",
-  "description": "",
+  "description": "Making a recipe thing.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
