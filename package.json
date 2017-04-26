@@ -17,5 +17,8 @@
     "url": "https://github.com/JessSchoon/grasshopper/issues"
   },
   "homepage": "https://github.com/JessSchoon/grasshopper#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "~4.15.2"
+  }
 }

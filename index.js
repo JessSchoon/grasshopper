@@ -1,1 +1,8 @@
-console.log ("Yep, We're running our code, and it's doing what we want it to do!")
+var express = require("express")
+var application = express()
+
+application.get( "/", function (request, response) {
+  response.send("Hi!")
+})
+
+application.listen(1436)
