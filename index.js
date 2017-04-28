@@ -1,6 +1,10 @@
 var express = require("express")
 var application = express()
 
+application.get("/", function (request, response){
+  response.send("Hi! Welcome!!")
+})
+
 application.get( "/:recipe", function (request, response) {
   response.render("index", {recipe: request.param("recipe")})
 })
