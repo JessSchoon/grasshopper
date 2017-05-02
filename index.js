@@ -16,6 +16,11 @@ application.get( "/bootstrap.css", function (request, response) {
   response.sendFile(cssPath)
 })
 
+application.get("/styles.css", function(request, response) {
+  var cssPath = path.join(__dirname, "assets", "styles.css")
+  response.sendFile(cssPath)
+})
+
 application.get( "/:recipe", function (request, response) {
   response.render("index", {recipe: request.param("recipe")})
 })

@@ -1,0 +1,13 @@
+body{
+  background:#F09878;
+}
+
+.content{
+  background:white;
+  height: 100%;
+  width: 75%;
+  padding: 0px 10px;
+  overflow-y: auto;
+  margin:0 auto;
+}
+
