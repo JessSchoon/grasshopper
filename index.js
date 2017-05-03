@@ -3,7 +3,7 @@ var path = require("path")
 var application = express()
 
 application.get("/", function (request, response){
-  response.send("Hi! Welcome!!")
+  response.render("index")
 })
 
 application.get( "/bootstrap.js", function (request, response) {
@@ -22,7 +22,7 @@ application.get("/styles.css", function(request, response) {
 })
 
 application.get( "/:recipe", function (request, response) {
-  response.render("index", {recipe: request.param("recipe")})
+  response.render("recipe", {recipe: request.param("recipe")})
 })
 
 application.listen(1436)
