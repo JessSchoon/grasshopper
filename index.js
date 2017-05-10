@@ -22,7 +22,9 @@ application.get("/styles.css", function(request, response) {
 })
 
 application.get( "/:recipe", function (request, response) {
-  response.render("recipe", {recipe: request.param("recipe")})
+  var recipeData = require("./recipes.json")
+  var data = recipeData.data[0]
+  response.render("recipe", data)
 })
 
 application.listen(1436)
