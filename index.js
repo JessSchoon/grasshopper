@@ -4,7 +4,8 @@ var path = require('path')
 var application = express()
 
 application.get('/', function (request, response) {
-  response.render('index')
+  var recipes = db.getAllRecipes()
+  response.render('index', { recipes: recipes })
 })
 
 application.get('/bootstrap.js', function (request, response) {

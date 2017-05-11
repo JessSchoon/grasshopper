@@ -4,4 +4,8 @@ link(rel='stylesheet', href='/styles.css')
 
 div.content
 
-  h1 "Hi! Welcome!!"
+  h1 List of Schoonmaker family recipes
+
+  ul
+    each recipe in recipes
+      li #{recipe.title}
