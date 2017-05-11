@@ -32,4 +32,4 @@ application.listen(1436, function () {
 })
 
 application.set('view engine', 'pug')
-application.set('views', './views')
+application.set('views', './templates')
