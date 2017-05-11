@@ -27,7 +27,9 @@ application.get('/:recipe', function (request, response) {
   response.render('recipe', data)
 })
 
-application.listen(1436)
+application.listen(1436, function () {
+  console.log('Listening on port 1436...')
+})
 
 application.set('view engine', 'pug')
 application.set('views', './views')
