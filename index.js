@@ -1,3 +1,4 @@
+var db = require('./lib/db')
 var express = require('express')
 var path = require('path')
 var application = express()
@@ -22,9 +23,8 @@ application.get('/styles.css', function (request, response) {
 })
 
 application.get('/:recipe', function (request, response) {
-  var recipeData = require('./recipes.json')
-  var data = recipeData.data[0]
-  response.render('recipe', data)
+  var recipeData = db.getRecipeBySlug(request.params.recipe)
+  response.render('recipe', recipeData)
 })
 
 application.listen(1436, function () {
