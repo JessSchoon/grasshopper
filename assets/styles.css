@@ -11,3 +11,6 @@ body{
   margin:0 auto;
 }
 
+h1.error{
+  text-align: center;
+}

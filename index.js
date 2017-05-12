@@ -25,6 +25,10 @@ application.get('/styles.css', function (request, response) {
 
 application.get('/:recipe', function (request, response) {
   var recipeData = db.getRecipeBySlug(request.params.recipe)
+  if (recipeData == null) {
+    response.status(404).render('404')
+    return
+  }
   response.render('recipe', recipeData)
 })
 
