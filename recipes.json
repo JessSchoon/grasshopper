@@ -23,7 +23,8 @@
       "Chill in an ice bath or refrigerate until yogurt registers at least 45°F on an instant-read thermometer.",
       "Churn yogurt in ice cream machine according to manufacturer's instructions.",
       "Transfer ice cream to airtight container and chill in freezer for at least 4 to 5 hours before serving."
-    ]
+    ],
+    "slug": "froyo"
   },
   "pizza": {
     "title": "Pizza Dough",
@@ -56,7 +57,8 @@
       "120 minutes",
       "Divide",
       "90 minutes"
-    ]
+    ],
+    "slug": "pizza"
   },
   "thaiSoup": {
     "title": "Thai Inspired Shrimp Soup",
@@ -99,7 +101,7 @@
         "amount": 1,
         "unit": "12 oz pkg",
         "name": "cooked shrimp"
-      } 
+      }
     ],
     "directions": [
       "Dice onion.",
@@ -110,6 +112,38 @@
       "Let simmer (small bubbles) for three minutes.",
       "Add almond butter and stir until the almond butter is mixed in.",
       "Add shrimp, and leave it simmering until the shrimp is warm."
-    ]
+    ],
+    "slug": "thaiSoup"
+  },
+  "bread": {
+    "title": "Bread",
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "grams",
+        "name": "all-purpose flour"
+      },
+      {
+        "amount": 350,
+        "unit": "grams",
+        "name": "water"
+      },
+      {
+        "amount": 12,
+        "unit": "grams",
+        "name": "salt"
+      },
+      {
+        "amount": 1,
+        "unit": "gram",
+        "name": "yeast"
+      }
+    ],
+    "directions": [
+      "Do something.",
+      "Do something else."
+    ],
+    "slug": "bread",
+    "_locals": {}
   }
 }

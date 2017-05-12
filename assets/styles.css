@@ -14,3 +14,13 @@ body{
 h1.error{
   text-align: center;
 }
+
+label {
+  display: block;
+  margin: 16px 8px;
+}
+
+input, button, select, textarea {
+  display: block;
+  width: 100%;
+}
