@@ -8,4 +8,5 @@ div.content
 
   ul
     each recipe in recipes
-      li #{recipe.title}
+      li
+        a(href='/' + recipe.slug) #{recipe.title}
