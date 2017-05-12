@@ -57,5 +57,59 @@
       "Divide",
       "90 minutes"
     ]
+  },
+  "thaiSoup": {
+    "title": "Thai Inspired Shrimp Soup",
+    "ingredients": [
+      {
+        "amount": 0.5,
+        "name": "onion"
+      },
+      {
+        "amount": 1,
+        "unit": "tablespoon",
+        "name": "garlic"
+      },
+      {
+        "amount": 1,
+        "unit": "bunch",
+        "name": "kale"
+      },
+      {
+        "amount": 1,
+        "unit": "can",
+        "name": "coconut milk"
+      },
+      {
+        "amount": 0.25,
+        "unit": "teaspoon",
+        "name": "salt"
+      },
+      {
+        "amount": 1,
+        "unit": "pinch",
+        "name": "pepper"
+      },
+      {
+        "amount": 1,
+        "unit": "heaping tablespoon",
+        "name": "peanut or almond butter"
+      },
+      {
+        "amount": 1,
+        "unit": "12 oz pkg",
+        "name": "cooked shrimp"
+      } 
+    ],
+    "directions": [
+      "Dice onion.",
+      "Chop Kale",
+      "Heat onions and garlic in medium pot over medium heat until the onions are translucent.",
+      "Put kale in pot, and heat on medium heat until the kale is wilted.",
+      "Add cocounut milk salt and pepper to the pot.",
+      "Let simmer (small bubbles) for three minutes.",
+      "Add almond butter and stir until the almond butter is mixed in.",
+      "Add shrimp, and leave it simmering until the shrimp is warm."
+    ]
   }
 }
