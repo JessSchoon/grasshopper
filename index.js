@@ -35,15 +35,7 @@ application.post('/new', function (request, response) {
   var newRecipeData = {
     title: request.body.title,
     slug: string.slugify(request.body.title),
-    ingredients: request.body.ingredients.replace(/\r\n/g, '\n').split('\n')
-      .map(function (line) {
-        var pieces = line.split(' ')
-        return {
-          amount: Number(pieces[0]),
-          unit: pieces[1],
-          name: pieces.slice(2).join(' ')
-        }
-      }),
+    ingredients: request.body.ingredients.replace(/\r\n/g, '\n').split('\n'),
     directions: request.body.directions.replace(/\r\n/g, '\n').split('\n')
   }
 
