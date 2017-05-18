@@ -31,12 +31,18 @@ application.get('/new', function (request, response) {
   response.render('new-recipe')
 })
 
+function deLiner (original) {
+  return original.replace(/\r\n/g, '\n').split('\n').filter(function (line) {
+    return line.length > 0
+  })
+}
+
 application.post('/new', function (request, response) {
   var newRecipeData = {
     title: request.body.title,
     slug: string.slugify(request.body.title),
-    ingredients: request.body.ingredients.replace(/\r\n/g, '\n').split('\n'),
-    directions: request.body.directions.replace(/\r\n/g, '\n').split('\n')
+    ingredients: deLiner(request.body.ingredients),
+    directions: deLiner(request.body.directions)
   }
 
   db.addNewRecipe(newRecipeData)
