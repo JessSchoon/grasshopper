@@ -53,6 +53,11 @@ application.get('/:recipe', function (request, response) {
   response.render('recipe', recipeData)
 })
 
+application.get('/:recipe/remove', function (request, response) {
+  db.removeRecipe(request.params.recipe)
+  response.redirect('/')
+})
+
 application.listen(1436, function () {
   console.log('Listening on port 1436...')
 })

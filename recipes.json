@@ -70,16 +70,5 @@
     ],
     "slug": "hamburgers",
     "_locals": {}
-  },
-  "test": {
-    "title": "Test",
-    "ingredients": [
-      "one",
-      "two"
-    ],
-    "directions": [
-      "one",
-      "two"
-    ]
   }
 }
