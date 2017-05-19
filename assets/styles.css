@@ -24,3 +24,9 @@ input, button, select, textarea {
   display: block;
   width: 100%;
 }
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
