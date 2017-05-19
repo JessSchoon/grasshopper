@@ -9,7 +9,7 @@ div.content
   ul
     each recipe in recipes
       li
-        a(href='/' + recipe.slug) #{recipe.title}
+        a(href='/recipes/' + recipe.slug) #{recipe.title}
 
   p
-    a(href='/new') Create new recipe
+    a(href='/recipes/new') Create new recipe

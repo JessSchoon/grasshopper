@@ -27,7 +27,7 @@ application.get('/styles.css', function (request, response) {
   response.sendFile(cssPath)
 })
 
-application.get('/new', function (request, response) {
+application.get('/recipes/new', function (request, response) {
   response.render('new-recipe')
 })
 
@@ -37,7 +37,7 @@ function deLiner (original) {
   })
 }
 
-application.post('/new', function (request, response) {
+application.post('/recipes', function (request, response) {
   var newRecipeData = {
     title: request.body.title,
     slug: string.slugify(request.body.title),
@@ -50,8 +50,8 @@ application.post('/new', function (request, response) {
   response.redirect('/')
 })
 
-application.get('/:recipe', function (request, response) {
-  var recipeData = db.getRecipeBySlug(request.params.recipe)
+application.get('/recipes/:recipeSlug', function (request, response) {
+  var recipeData = db.getRecipeBySlug(request.params.recipeSlug)
   if (recipeData == null) {
     response.status(404).render('404')
     return
@@ -59,8 +59,8 @@ application.get('/:recipe', function (request, response) {
   response.render('recipe', recipeData)
 })
 
-application.get('/:recipe/remove', function (request, response) {
-  db.removeRecipe(request.params.recipe)
+application.get('/recipes/:recipeSlug/remove', function (request, response) {
+  db.removeRecipe(request.params.recipeSlug)
   response.redirect('/')
 })
 
