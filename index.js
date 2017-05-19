@@ -1,10 +1,12 @@
 var db = require('./lib/db')
 var bodyparser = require('body-parser')
 var express = require('express')
+var morgan = require('morgan')
 var path = require('path')
 var string = require('underscore.string')
 var application = express()
 
+application.use(morgan('dev'))
 application.use(bodyparser.urlencoded())
 
 application.get('/', function (request, response) {
