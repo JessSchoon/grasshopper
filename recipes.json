@@ -80,7 +80,7 @@
       "2 tsp baking soda",
       "1 tsp baking power",
       "1/2 tsp NaCl",
-      "2 eggs",
+      "2 vegan replacement eggs",
       "1 c black coffee",
       "1 c unsweetened almond milk",
       "1/2 c canola oil",
@@ -92,6 +92,8 @@
       "Increase temperature in an oven to 350 deg F.",
       "Sift all dry components together.  Add eggs and liquids, stir until batter is smooth (batter will be thin).  Beat for 2 to 4 minutes (not sure why this is not very specific; I think the idea is to beat until it looks right, but then I don’t have much idea of what that would be; you could just do 3 minutes and hope for the best, or you could Skype with the boss here and stick your phone into the batter, but that might be overkill, or maybe this is a special innate skill of discerning beating conditions which you may possess; may the force be with you...).",
       "Bake 35 minutes or until done (use the force here, too) for the cake pan; 45 minutes for the tube pan or a loaf pan."
-    ]
+    ],
+    "slug": "everything-free-black-magic-cake",
+    "_locals": {}
   }
 }

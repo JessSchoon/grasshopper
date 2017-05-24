@@ -61,6 +61,15 @@ application.get('/recipes/:recipeSlug', function (request, response) {
   response.render('recipe', recipeData)
 })
 
+application.get('/recipes/:recipeSlug/edit', function (request, response) {
+  var recipeData = db.getRecipeBySlug(request.params.recipeSlug)
+  if (recipeData == null) {
+    response.status(404).render('404')
+    return
+  }
+  response.render('edit-recipe', recipeData)
+})
+
 application.get('/recipes/:recipeSlug/remove', function (request, response) {
   db.removeRecipe(request.params.recipeSlug)
   response.redirect('/')
