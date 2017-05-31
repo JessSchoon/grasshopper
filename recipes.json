@@ -12,7 +12,8 @@
       "Churn yogurt in ice cream machine according to manufacturer's instructions.",
       "Transfer ice cream to airtight container and chill in freezer for at least 4 to 5 hours before serving."
     ],
-    "slug": "froyo"
+    "slug": "froyo",
+    "_locals": {}
   },
   "pizza": {
     "title": "Pizza Dough",
@@ -30,7 +31,8 @@
       "Divide",
       "90 minutes"
     ],
-    "slug": "pizza"
+    "slug": "pizza",
+    "_locals": {}
   },
   "thaiSoup": {
     "title": "Thai Inspired Shrimp Soup",
@@ -61,15 +63,13 @@
     "ingredients": [
       "hamburger patties",
       "hamburger buns",
-      ""
+      "alkjfdsoidshfaosidhf"
     ],
     "directions": [
       "cook patties",
       "grill buns",
       "put patty on bun"
-    ],
-    "slug": "hamburgers",
-    "_locals": {}
+    ]
   },
   "everything-free-black-magic-cake": {
     "title": "Everything Free Black Magic Cake",

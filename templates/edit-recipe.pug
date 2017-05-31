@@ -6,7 +6,8 @@ div.content
 
   h1 Edit recipe
 
-  form(action='/recipes/' + slug, method='PUT')
+  form(action='/recipes', method='POST')
+
     label Title
       input(name='title', value=title)
     label Ingredients
