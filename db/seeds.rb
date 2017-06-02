@@ -5,3 +5,84 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Recipe.create({
+  title: 'Simple Frozen Yogurt',
+  ingredients: [
+    '1 quart full-fat yogurt',
+    '1 cup sugar',
+    '0.25 teaspoon salt'
+  ],
+  directions: [
+    'Whisk yogurt, sugar, and salt together in a mixing bowl until sugar has completely dissolved.',
+    'Chill in an ice bath or refrigerate until yogurt registers at least 45°F on an instant-read thermometer.',
+    'Churn yogurt in ice cream machine according to manufacturer\'s instructions.',
+    'Transfer ice cream to airtight container and chill in freezer for at least 4 to 5 hours before serving.'
+  ]
+})
+
+Recipe.create({
+  title: 'Pizza Dough',
+  ingredients: [
+    '500 grams all-purpose flour',
+    '350 grams water',
+    '16 grams salt',
+    '1 grams yeast'
+  ],
+  directions: [
+    'Mix, stir, knead 2 minutes',
+    '30 minutes',
+    'Knead 2 minutes',
+    '120 minutes',
+    'Divide',
+    '90 minutes'
+  ]
+})
+
+Recipe.create({
+  title: 'Thai Inspired Shrimp Soup',
+  ingredients: [
+    '0.5 onion',
+    '1 Tablespoon minced garlic',
+    '1 bunch kale',
+    '1 can coconut milk',
+    '.25 teaspoon salt',
+    '1 pinch pepper',
+    '1 Tablespoon peanut butter',
+    '1 (12 oz) pkg cooked shrimp'
+  ],
+  directions: [
+    'Dice onion.',
+    'Chop Kale.',
+    'Heat onions and garlic in medium pot over medium heat until the onions are translucent.',
+    'Put kale in pot, and heat on medium heat until the kale is wilted.',
+    'Add cocounut milk salt and pepper to the pot.',
+    'Let simmer (small bubbles) for three minutes.',
+    'Add almond butter and stir until the almond butter is mixed in.',
+    'Add shrimp, and leave it simmering until the shrimp is warm.'
+  ]
+})
+
+Recipe.create({
+  title: 'Everything Free Black Magic Cake',
+  ingredients: [
+    '2 c gluten free baking substitute flour',
+    '2 c sugar',
+    '3/4 c cocoa',
+    '2 tsp baking soda',
+    '1 tsp baking power',
+    '1/2 tsp NaCl',
+    '2 vegan replacement eggs',
+    '1 c black coffee',
+    '1 c unsweetened almond milk',
+    '1/2 c canola oil',
+    '2 tsp vanilla extract',
+    '1 tsp Xanthan gum'
+  ],
+  directions: [
+    'Grease and flour a 9” x 13” cake pan (or a tube pan or a loaf pan).',
+    'Increase temperature in an oven to 350 deg F.',
+    'Sift all dry components together.  Add eggs and liquids, stir until batter is smooth (batter will be thin).  Beat for 2 to 4 minutes (not sure why this is not very specific; I think the idea is to beat until it looks right, but then I don’t have much idea of what that would be; you could just do 3 minutes and hope for the best, or you could Skype with the boss here and stick your phone into the batter, but that might be overkill, or maybe this is a special innate skill of discerning beating conditions which you may possess; may the force be with you...).',
+    'Bake 35 minutes or until done (use the force here, too) for the cake pan; 45 minutes for the tube pan or a loaf pan.'
+  ]
+})
