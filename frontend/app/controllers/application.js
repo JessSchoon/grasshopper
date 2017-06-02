@@ -3,10 +3,8 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   recipes: [],
   init: function () {
-    fetch('/recipes')
-      .then(response => response.json())
-      .then(recipeData => {
-        this.set('recipes', recipeData);
-      });
+    this.get('store')
+      .findAll('recipe')
+      .then(recipes => this.set('recipes', recipes))
   }
 });
