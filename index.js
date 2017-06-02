@@ -1,11 +1,13 @@
 var db = require('./lib/db')
 var bodyparser = require('body-parser')
+var cors = require('cors')
 var express = require('express')
 var morgan = require('morgan')
 var path = require('path')
 var string = require('underscore.string')
 var application = express()
 
+application.use(cors())
 application.use(morgan('dev'))
 application.use(bodyparser.urlencoded())
 
@@ -50,6 +52,14 @@ application.post('/recipes', function (request, response) {
   db.addNewRecipe(newRecipeData)
 
   response.redirect('/')
+})
+
+application.get('/recipes.json', function (request, response) {
+  var recipes = db.getAllRecipes()
+
+  console.log('Recipes:', recipes)
+
+  response.send(recipes)
 })
 
 application.get('/recipes/:recipeSlug', function (request, response) {

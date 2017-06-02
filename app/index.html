@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="//localhost:1436/styles.css"/>
+
+<div class="content">
+  <h1>List of recipes</h1>
+  <ul id="recipes">
+  </ul>
+  <p><a href="/recipes/new">Create new recipe</a></p>
+</div>
+
+<script>
+  fetch('http://localhost:1436/recipes.json')
+    .then(response => response.json())
+    .then(function (recipeData) {
+      console.log(recipeData)
+      recipeData.forEach(function (recipe) {
+        var link = document.createElement('a')
+        link.href = 'http://localhost:1436/recipes/' + recipe.slug
+        link.innerText = recipe.title
+        var item = document.createElement('li')
+
+        item.appendChild(link)
+        recipes.appendChild(item)
+      })
+    })
+</script>
