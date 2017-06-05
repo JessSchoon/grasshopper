@@ -1,7 +1,9 @@
-<h1>List of recipes</h1>
-
 <ul>
   {{#each model as |recipe|}}
-    <li><a href="/recipes/{{recipe.id}}">{{recipe.title}}</a></li>
+    <li>
+      {{#link-to 'recipe' recipe}}
+        {{recipe.title}}
+      {{/link-to}}
+    </li>
   {{/each}}
 </ul>
