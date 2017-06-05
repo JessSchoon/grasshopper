@@ -1,1 +1,13 @@
 <h1>{{model.title}}</h1>
+
+<ul>
+  {{#each model.ingredients as |ingredient|}}
+    <li>{{ingredient}}</li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each model.directions as |direction|}}
+    <li>{{direction}}</li>
+  {{/each}}
+</ul>
