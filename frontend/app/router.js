@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('index', { path: '/' });
+  this.route('recipe', { path: '/recipes/:recipe_id' });
 });
 
 export default Router;
