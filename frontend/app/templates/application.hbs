@@ -1,11 +1,5 @@
 <link rel="stylesheet" href="//localhost:1436/bootstrap.css">
 <link rel="stylesheet" href="//localhost:1436/styles.css">
 <div class="content">
-  <h1>List of recipes</h1>
-
-  <ul>
-  {{#each recipes as |recipe|}}
-    <li><a href="/recipes/{{recipe.id}}">{{recipe.title}}</a></li>
-  {{/each}}
-  </ul>
+  {{outlet}}
 </div>
